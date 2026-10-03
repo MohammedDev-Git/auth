@@ -1,0 +1,107 @@
+.app {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+.app-header {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.app-header h1 {
+  margin: 0 0 8px;
+  color: var(--text-h);
+}
+
+.app-header p {
+  margin: 0;
+}
+
+.lesson-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.card h2 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+  color: var(--text-h);
+}
+
+.card p {
+  margin: 0 0 16px;
+}
+
+.client-card {
+  border-top: 4px solid #2563eb;
+}
+
+.server-card {
+  border-top: 4px solid #059669;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.log {
+  min-height: 72px;
+  margin: 0;
+  padding: 12px;
+  background: var(--code-bg);
+  border-radius: 10px;
+  white-space: pre-wrap;
+}
+
+.note {
+  margin-top: 16px;
+  padding: 14px 16px;
+  background: var(--accent-bg);
+  border-radius: 12px;
+}
+
+.task-list {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.task-list li {
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  background: var(--code-bg);
+  border-radius: 10px;
+}
+
+.task-empty {
+  color: var(--text);
+}
+
+@media (max-width: 700px) {
+  .lesson-grid {
+    grid-template-columns: 1fr;
+  }
+}
